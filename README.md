@@ -10,6 +10,7 @@ A student that completes this project shows that they can:
 
 ## Introduction
 
+
 The countries of the world have many different defining attributes including land size, population, and median age. Below is a list of countries to include in your data. As most people do their research using websites, we are going to create web services to help search this data. We will be returning JSON objects. Nothing fancy for now!
 
 We will be creating an table for country data. The country model should contain the following fields. The model should be named `Country` and the table `countries`

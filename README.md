@@ -2,11 +2,11 @@
 
 A student that completes this project shows that they can:
 
-* Use IntelliJ in the following areas: application creation, code entry, and code execution
-* Explain the uses of and differences between Maven, Spring, and Tomcat
-* Build a REST service using Spring Boot
-* Use and implement inversion of control and dependency injection with Spring
-* Implement Beans throughout the Beans’ lifecycle controlling the Beans using annotations
+- Use IntelliJ in the following areas: application creation, code entry, and code execution
+- Explain the uses of and differences between Maven, Spring, and Tomcat
+- Build a REST service using Spring Boot
+- Use and implement inversion of control and dependency injection with Spring
+- Implement Beans throughout the Beans’ lifecycle controlling the Beans using annotations
 
 ## Introduction
 
@@ -14,18 +14,18 @@ The countries of the world have many different defining attributes including lan
 
 We will be creating an table for country data. The country model should contain the following fields. The model should be named `Country` and the table `countries`
 
-* String name
-* long population
-* long landmasskm2
-* int medianage
+- String name
+- long population
+- long landmasskm2
+- int medianage
 
 The model should also include the standard getters and setters. You should use the provided data.sql file to seed your data
 
 Some Important Notes That Might help:
 
-* The sort method must work with `int` - so not `long`. the solution - type casting! See the code snippet below:  
-      `.sort((c1, c2) -> (int)(c1.getPopulation() - c2.getPopulation()))`
-* To calculate median for stretch goals - if the list contains an odd number of items, pick the middle one. If the list contains an even number of items, pick either of the two items that lie in the middle.
+- The sort method must work with `int` - so not `long`. the solution - type casting! See the code snippet below:  
+   `.sort((c1, c2) -> (int)(c1.getPopulation() - c2.getPopulation()))`
+- To calculate median for stretch goals - if the list contains an odd number of items, pick the middle one. If the list contains an even number of items, pick either of the two items that lie in the middle.
 
 Using the data.sql at the end, the endpoints will produce the following outputs. Expand to see the suggested outputs! Note that id numbers may vary.
 
@@ -1580,13 +1580,13 @@ Status OK
 
 The following URLs should return the requested data given the parameters
 
-* [ ] /names/all - return the names of all the countries alphabetically
-* [ ] /names/start/{letter} - return the countries alphabetically that begin with the given letter
+- [ ] /names/all - return the names of all the countries alphabetically
+- [ ] /names/start/{letter} - return the countries alphabetically that begin with the given letter
 
-* [ ] /population/total - return the total population of all countries in the console while returning Http Status OK as the response.
-* [ ] /population/min - return the country with the smallest population
-* [ ] /population/max - return the country with the largest population
+- [ ] /population/total - return the total population of all countries in the console while returning Http Status OK as the response.
+- [ ] /population/min - return the country with the smallest population
+- [ ] /population/max - return the country with the largest population
 
 ### Stretch Goal
 
-* [ ] /population/median - return the country with the median population
+- [ ] /population/median - return the country with the median population
